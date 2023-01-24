@@ -19,7 +19,7 @@ export default function Home() {
           <div className='mr-4 py-44'>
             <div className='flex flex-col rounded-xl p-10 bg-purple w-[270px] h-[320px]'>
               <div className='animation-bounce'>
-                <Image alt="item8" src={item8} className="imgAnimation" />
+                <Image alt="item8" src={item8} className="animate-bounce translate-y-2" />
               </div>
               <div></div>
             </div>
