@@ -2,15 +2,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url(../public/bg-about.jpg);
   color: #fff;
   font-weight: 400;
+  font-size: 20px;
 }
+
 .container {
   max-width: 1200px;
+}
+
+.imgAnimation {
+  animation: move 3s infinite linear;
+}
+
+.subBanner {
+  background: #4c22e1;
+  position: relative;
+  padding: 52px 94px 61px;
+  border-radius: 20px;
+}
+
+.subBanner::before {
+  background: url(../public/bg-inner-page-02.png);
 }

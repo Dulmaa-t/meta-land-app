@@ -14,7 +14,7 @@ const NftCard = () => {
             <h1 className="text-center text-[42px]">Checkout Our NFT Collections</h1>
             <div className="my-8">
                 <div className="flex flex-row gap-4 mb-4 w-[378px] h-[378px]">
-                    <Image src={montono7} alt="montono7"/>
+                    <Image src={montono7} alt="montono7" />
                     <Image src={montono2} alt="montono2" />
                     <Image src={montono3} alt="montono3" />
                 </div>
@@ -24,7 +24,10 @@ const NftCard = () => {
                     <Image src={montono6} alt="montono6" />
                 </div>
             </div>
-            <button className="border rounded-full border-orange py-2 px-4">View All</button>
+            <div className="flex items-center justify-center">
+                <button className="border rounded-full border-orange py-2 px-4">View All</button>
+            </div>
+
         </div>
     )
 }

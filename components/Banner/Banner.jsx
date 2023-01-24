@@ -8,7 +8,7 @@ const Banner = () => {
                 <h6 className="text-[20px]">We are Monteno NFT</h6>
                 <h1 className="text-[42px]">Collect Next Generation NFTs Today</h1>
                 <p className="text-[20px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                <button className="rounded-full py-4 px-10 text-white bg-orange w-[200px]">Get Connected</button>
+                <button className="rounded-full py-4 px-10 text-white bg-orange w-[240px]">Get Connected</button>
             </div>
             <div className="flex flex-1">
                 j

@@ -5,11 +5,17 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "../../public/logo.png";
 
 
-const Header = ({}) => {
+const Header = ({ }) => {
     return (
-        <div className="w-full flex justify-between items-center gap-8 container mx-80">
-            <Image src={Logo} alt="logo"/>
-            <Navigation/>
+        <div className="flex justify-between items-center gap-8 container mx-auto">
+            <Link href={`/`}>
+                <div>
+                    <Image src={Logo} alt="logo" />
+                </div>
+            </Link>
+            <div>
+                <Navigation />
+            </div>
         </div>
     )
 }
