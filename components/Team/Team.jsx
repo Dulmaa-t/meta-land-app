@@ -8,6 +8,7 @@ const Team = () => {
             <div className="rounded-full border-purple border-4">
                 <Image src={team1} alt="team1" className="rounded-full w-[270px] h-[270px] "/>
             </div>
+            <div className=""></div>
             <div className="rounded-full border-purple border-4">
                 <Image src={team1} alt="team1" className="rounded-full w-[270px] h-[270px]"/>
             </div>

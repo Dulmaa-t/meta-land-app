@@ -1,8 +1,5 @@
-/* @import "./modules/_common.css"; */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "./modules/_common.css";
+@import "./modules/_animation.css";
 html,
 body {
   padding: 0;
@@ -16,10 +13,6 @@ body {
 
 .container {
   max-width: 1200px;
-}
-
-.imgAnimation {
-  animation: move 3s infinite linear;
 }
 
 .subBanner {

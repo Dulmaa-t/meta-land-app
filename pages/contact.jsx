@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import nft4 from "../public/group-ntf-04.png";
 
+
 const Contact = () => {
     return (
         <div className="container mx-auto py-20">
