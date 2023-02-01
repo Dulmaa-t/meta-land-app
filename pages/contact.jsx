@@ -2,21 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import nft4 from "../public/group-ntf-04.png";
+import SubBanner from "../components/SubBanner/SubBanner";
 
 
 const Contact = () => {
     return (
         <div className="container mx-auto py-20">
-            <div className="subBanner flex justify-between">
-                <div className="w-80">
-                    <h1 className="text-[42px] font-bold">Contact</h1>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                </div>
-                <div className="flex text-center">
-                    <Image src={nft4} alt=""/>
-                </div>
-            </div>
+           <SubBanner />
             <div className="text-center mt-20">
                 <p className="">Send Message</p>
                 <h1 className="text-[42px]">Write Us Message for Any Reason</h1>

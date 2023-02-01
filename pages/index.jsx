@@ -11,9 +11,9 @@ import item8 from "../public/item-08.png";
 import item10 from "../public/item-10.png";
 import { motion } from "framer-motion";
 import RoadMap from '../components/RoadMap/RoadMap';
-import { FadeIn } from 'react-slide-fade-in';
 
 export default function Home() {
+
   return (
     <div className="container mx-auto">
       <Banner />
@@ -47,7 +47,7 @@ export default function Home() {
           <h1 className='text-[42px]'>Hight Quality NFT Collections</h1>
           <p className='text-[20px] py-4'>Sed ut perspiciatis unde omnis iste natus enim ad minim veniam, quis nostrud exercit</p>
           <p className='text-[20px] py-4'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
-          <button className='py-4 px-10 rounded-full text-white bg-orange w-[250px]'>More About Us</button>
+          <button className='animation-btn py-4 px-10 rounded-full text-white bg-orange w-[250px]'>More About Us</button>
         </div>
       </div>
       <Card />
@@ -63,7 +63,7 @@ export default function Home() {
         <FAQ />
       </div>
       <div className='flex flex-col my-20 h-[1100px]'>
-        <p className='text-center text-[20px]'>Road Map</p>
+        <p className='text-center text-[20px] sub-title'>Road Map</p>
         <h1 className='aos-animate text-center text-[42px]'>The Journey of Monteno NFT</h1>
         <RoadMap />
       </div>

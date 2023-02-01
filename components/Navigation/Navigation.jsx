@@ -17,7 +17,7 @@ const Navigation = () => {
                 <NavItem title="Collections" redirect={() => redirect("/collections")}  />
                 <NavItem title="Pages" />
                 <NavItem title="Contact" redirect={() => redirect("/contact")} />
-                <NavItem title="Join Now" />
+                <NavItem title="Sign in" redirect={() => redirect("/login")}/>
             </ul>
         </div>
     )

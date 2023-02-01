@@ -25,3 +25,11 @@ body {
 .subBanner::before {
   background: url(../public/bg-inner-page-02.png);
 }
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 1025px) {
+
+}

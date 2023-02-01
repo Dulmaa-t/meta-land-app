@@ -16,6 +16,20 @@
     }
 }
 
+.sub-title {
+    animation: fadeUp 5s;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .mapCard::before {
     content: "";
     position: absolute;
@@ -24,11 +38,133 @@
     height: 4px;
     background: #fff;
 }
+
 .sub-title::after {
-    background: #fd562a;
-    height: 58px;
-    width: 36px;
+    content: "";
+    position: absolute;
     bottom: 0;
     left: 0;
+    width: 36px;
+    height: 5px;
+    background: #fd562a;
+}
+
+h1 {
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.perspective {
+    transform: perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1);
+    transition: transform 4s ease 0s;
+}
+
+.perspective:hover {
+    transform: perspective(1000px) rotateX(15deg) rotateY(15deg) scale3d(1, 1, 1);
+}
+
+.icon {
+    transform: rotateY(360deg);
+    transition: all 1s ease-in-out;
+}
+
+.icon:hover {
+    transform: none;
+    cursor: pointer;
+}
+
+.animation-btn:hover {
+    color: #fd562a;
+    background: #fff;
+    font-weight: 500;
+}
+
+.technology_img {
+    animation: swing ease-in-out 1s infinite alternate;
+}
+
+@keyframes swing {}
+
+.spinner {
+    width: 10em;
+    height: 10em;
+    border-top: 1em solid #6da9f5;
+    border-right: 1em solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    animation: spinner 0.6s linear infinite;
+}
+
+.head {
+    width: 1em;
+    height: 1em;
+    background-color: #6da9f5;
+    border-radius: 50%;
+    margin-left: 8.5em;
+    margin-top: 0.5em;
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.btn-action {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-family: "Gilroy-Bold";
+}
+
+.btn-action::before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.btn-action::after,
+.btn-action::before {
     position: absolute;
+    z-index: -1;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fd562a;
+    border-radius: 50%;
+}
+
+.header.is-fixed.is-small {
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    background: #200b6a;
+}
+.logo:hover {
+    opacity: 100%;
+}
+.heading-bg {
+    font-size: 240px;
+    letter-spacing: 24px;
+    text-transform: uppercase;
+}
+
+.heading-bg span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4425ad;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }

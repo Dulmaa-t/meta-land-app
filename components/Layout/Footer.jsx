@@ -29,7 +29,7 @@ const Footer = () => {
                     </Link>
                     <Link href={`/`}>
                         <div className="rounded-full p-4 bg-whitePurple">
-                            < FaYoutube />
+                            <FaYoutube />
                         </div>
                     </Link>
                 </div>
