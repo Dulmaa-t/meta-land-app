@@ -154,9 +154,11 @@ h1 {
     visibility: visible;
     background: #200b6a;
 }
+
 .logo:hover {
     opacity: 100%;
 }
+
 .heading-bg {
     font-size: 240px;
     letter-spacing: 24px;
@@ -167,4 +169,31 @@ h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #4425ad;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+.title::after,
+.title::before {
+    content: '';
+    position: absolute;
+    top: 0.25em;
+    left: -1.5em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.title::after {
+    transform: rotate(90deg);
+}
+
+.content {
+    max-height: 0;
+}
+
+.toggle:checked+.title+.content {
+    max-height: 500px;
+}
+
+.toggle:checked+.title::before {
+    transform: rotate(90deg) !important;
 }
