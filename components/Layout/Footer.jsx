@@ -13,23 +13,23 @@ const Footer = () => {
                 <p className="w-[300px]">Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat pariatur.</p>
                 <div className="flex flex-row gap-4 text-[20px]">
                     <Link href={`/`}>
-                        <div className="rounded-full p-4 bg-whitePurple transition transform hover:transition-all">
-                            <FaFacebookF />
+                        <div className="rounded-full p-4 bg-whitePurple transition transform hover:transition-all hover:bg-blue-500">
+                            <FaFacebookF className="icon"/>
                         </div>
                     </Link>
                     <Link href={`/`}>
-                        <div className="rounded-full p-4 bg-whitePurple">
-                            <FaTwitter />
+                        <div className="rounded-full p-4 bg-whitePurple hover:bg-blue-400">
+                            <FaTwitter className="icon"/>
                         </div>
                     </Link>
                     <Link href={`/`}>
-                        <div className="rounded-full p-4 bg-whitePurple">
-                            <FaLinkedinIn />
+                        <div className="rounded-full p-4 bg-whitePurple hover:bg-blue-300">
+                            <FaLinkedinIn className="icon" />
                         </div>
                     </Link>
                     <Link href={`/`}>
-                        <div className="rounded-full p-4 bg-whitePurple">
-                            <FaYoutube />
+                        <div className="rounded-full p-4 bg-whitePurple hover:bg-red-700">
+                            <FaYoutube className="icon" />
                         </div>
                     </Link>
                 </div>

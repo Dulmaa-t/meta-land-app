@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect, useCallback } from "react";
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -11,8 +12,16 @@ import item8 from "../public/item-08.png";
 import item10 from "../public/item-10.png";
 import { motion } from "framer-motion";
 import RoadMap from '../components/RoadMap/RoadMap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  const [isVisible, setVisible] = useState(false);
+  const domRef = useRef();
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <div className="container mx-auto">
@@ -43,23 +52,23 @@ export default function Home() {
           </div>
         </div>
         <div className='ml-20 pt-10'>
-          <span className='sub-title text-[20px]'>About Us</span>
-          <h1 className='text-[42px]'>Hight Quality NFT Collections</h1>
-          <p className='text-[20px] py-4'>Sed ut perspiciatis unde omnis iste natus enim ad minim veniam, quis nostrud exercit</p>
-          <p className='text-[20px] py-4'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
-          <button className='animation-btn py-4 px-10 rounded-full text-white bg-orange w-[250px]'>More About Us</button>
+          <span className='sub-title text-[20px]' data-aos="fade-up">About Us</span>
+          <h1 className='text-[42px]' data-aos="fade-up">Hight Quality NFT Collections</h1>
+          <p className='text-[20px] py-4' data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus enim ad minim veniam, quis nostrud exercit</p>
+          <p className='text-[20px] py-4' data-aos="fade-up">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
+          <button className='fillskewopen animation-btn py-4 px-10 rounded-full text-white bg-orange w-[250px]' data-aos="fade-up">More About Us</button>
         </div>
       </div>
       <Card />
       <NftCard />
       <div className='flex flex-col my-20'>
-        <p className='text-center text-[20px]'>Technology</p>
-        <h1 className='aos-animate text-center text-[42px]'>Monteno unique Technology</h1>
+        <p className='text-center text-[20px]' data-aos="fade-up">Technology</p>
+        <h1 className='aos-animate text-center text-[42px]' data-aos="fade-up">Monteno unique Technology</h1>
         <Technology />
       </div>
       <div className='flex flex-col my-20'>
-        <p className='text-center text-[20px]'>FAQ</p>
-        <h1 className='aos-animate text-center text-[42px]'>Frequently Aksed Questions</h1>
+        <p className='text-center text-[20px]' data-aos="fade-up">FAQ</p>
+        <h1 className='aos-animate text-center text-[42px]' data-aos="fade-up">Frequently Aksed Questions</h1>
         <FAQ />
       </div>
       <div className='flex flex-col my-20 h-[1100px]'>
@@ -74,7 +83,7 @@ export default function Home() {
         </div>
         <div className='items-center justify-center flex'>
           <input className='bg-white rounded-l-lg w-[400px] py-4 px-8' placeholder='Your email here' />
-          <button className='bg-orange py-4 px-8 rounded-r-lg'>Subscribe</button>
+          <button className='fillskewopen bg-orange py-4 px-8 rounded-r-lg'>Subscribe</button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Router, { useRouter } from "next/router";
 
-const Navigation = () => {
+const Navigation = (props) => {
     const router = useRouter();
     const redirect = (path) => {
         router.push(path);
@@ -12,7 +12,7 @@ const Navigation = () => {
     return (
         <div className="flex-1">
             <ul className="lg:flex py-3 items-center hidden gap-10">
-                <NavItem title="Home" redirect={() => redirect("/")} />
+                <NavItem title="Home" redirect={() => redirect("/")}/>
                 <NavItem title="About" redirect={() => redirect("/about")} />
                 <NavItem title="Collections" redirect={() => redirect("/collections")}  />
                 <NavItem title="Pages" />

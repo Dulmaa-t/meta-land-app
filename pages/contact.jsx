@@ -54,7 +54,7 @@ const Contact = () => {
                             <input className='bg-white rounded-lg text-black px-4 py-4' placeholder='Subject' />
                         </div>
                         <textarea className="w-full rounded-lg h-40 px-4 py-4" placeholder="Your message here"></textarea>
-                        <button className="bg-orange rounded-full py-2 px-8 mt-4 text-white font-normal">Send Now</button>
+                        <button className="fillskewopen bg-orange rounded-full py-2 px-8 mt-4 text-white font-normal">Send Now</button>
                     </form>
                 </div>
             </div>

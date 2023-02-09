@@ -18,8 +18,8 @@ const Banner = () => {
             <div className="flex flex-col gap-4 pr-10 w-1/3">
                 <h6 className="sub-title text-[20px]">We are Monteno NFT</h6>
                 <h1 className="text-[42px]">Collect Next Generation NFTs Today</h1>
-                <p className="text-[20px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                <button className="rounded-full py-4 px-10 text-white bg-orange w-[240px]">
+                <p className="text-[20px]" data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                <button className="fillskewopen rounded-full py-4 px-10 text-white bg-orange w-[240px]" data-aos="fade-up">
                     <a href={`/`} className="btn-action">Get Connected</a>
                 </button>
             </div>

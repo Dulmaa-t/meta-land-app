@@ -8,9 +8,9 @@ import database from "../../public/database.png";
 
 const Technology = () => {
     return (
-        <div className="flex justify-between mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-10">
             <div className="flex md:flex-col sm:flex-row sm:my-4 mr-10">
-                <div className="flex flex-row gap-4 my-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 my-4">
                     <div className="rounded-md py-8 px-8 bg-purple">
                         <div className="icon bg-white rounded-full p-4 w-16 h-16 flex items-center justify-center">
                             <Image src={database} alt="database" />
@@ -26,7 +26,7 @@ const Technology = () => {
                         <p className="text-[16px]">Aliquam erat volutpat. Fusce sit amet</p>
                     </div>
                 </div>
-                <div className="flex flex-row gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
                     <div className="rounded-md py-8 px-8 bg-purple">
                         <div className="icon bg-white rounded-full p-4 w-16 h-16 flex items-center justify-center">
                             <Image src={payment} alt="payment" />
