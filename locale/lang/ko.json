@@ -1,9 +1,8 @@
 {
-    "page.layout.menu_right": "권리등록",
-    "page.layout.menu_raceMarket": "공모전",
-    "page.layout.menu_market": "마켓",
-    "page.layout.menu_about": "소개",
-    "page.layout.menu_guide": "가이드",
-    "page.layout.menu_competition": "공모전",
-    "page.layout.menu_login": "로그인"
+    "page.layout.menu_right": "소개",
+    "page.layout.menu_about": "소개1",
+    "page.layout.menu_collections": "소개2",
+    "page.layout.menu_pages": "소개3",
+    "page.layout.menu_contact": "소개4",
+    "page.layout.menu_signin": "소개5"
 }

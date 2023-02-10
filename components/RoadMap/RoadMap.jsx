@@ -13,7 +13,7 @@ const RoadMap = () => {
     return (
         <div>
             <div className="container">
-                <div className="roadMap flex flex-wrap justify-center items-center relative h-full w-full">
+                <div className="roadMap relative">
                     <div className="mapCard left border-lg border border-purple bg-purple p-10 my-10 rounded-lg w-[470px] mx-30 absolute left-0" data-aos="fade-right" >
                         <span className="box-time left-logo"><BsCheck className="text-orange bg-white rounded-full w-[34px] h-[34px]" /></span>
                         <span className="text-[#fd562a]">February 01, 2022</span>

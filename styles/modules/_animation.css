@@ -261,15 +261,6 @@ button:after {
 }
 
 .roadMap {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    margin-top: 52px;
-}
-
-.roadMap {
     align-items: flex-start;
     justify-content: space-between;
     position: relative;

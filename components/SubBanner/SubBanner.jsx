@@ -12,7 +12,7 @@ const SubBanner = () => {
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
                     </div>
                     <div className="flex text-center">
-                        <Image src={nft4} alt="" />
+                        <Image src={nft4} alt="nft4" />
                     </div>
                 </div>
             </div>

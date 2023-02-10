@@ -4,24 +4,20 @@ import { useIntl } from "react-intl";
 function useCommonTranslation() {
     const intl = useIntl();
     const menu_right = intl.formatMessage({ id: "page.layout.menu_right" });
-    const menu_market = intl.formatMessage({ id: "page.layout.menu_market" });
+    const menu_collections = intl.formatMessage({ id: "page.layout.menu_collections" });
     const menu_about = intl.formatMessage({ id: "page.layout.menu_about" });
-    const menu_guide = intl.formatMessage({ id: "page.layout.menu_guide" });
-    const menu_raceMarket = intl.formatMessage({
-      id: "page.layout.menu_raceMarket",
+    const menu_pages = intl.formatMessage({ id: "page.layout.menu_pages" });
+    const menu_contact = intl.formatMessage({
+      id: "page.layout.menu_contact",
     });
-    const menu_competition = intl.formatMessage({
-      id: "page.layout.menu_competition",
-    });
-    const menu_login = intl.formatMessage({ id: "page.layout.menu_login" });
+    const menu_signin = intl.formatMessage({ id: "page.layout.menu_signin" });
     const menuTexts = {
         menu_right,
-        menu_market,
+        menu_collections,
         menu_about,
-        menu_guide,
-        menu_competition,
-        menu_login,
-        menu_raceMarket,
+        menu_pages,
+        menu_contact,
+        menu_signin,
       };
     return {
 
