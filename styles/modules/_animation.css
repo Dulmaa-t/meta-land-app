@@ -43,6 +43,12 @@
 .left::before {
     right: -116px;
 }
+.right-logo {
+    left: -133px;
+}
+.left-logo {
+    right: -133px;
+}
 .box-time {
     width: 34px;
     height: 34px;
@@ -263,6 +269,13 @@ button:after {
     margin-top: 52px;
 }
 
+.roadMap {
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+}
+
 .roadMap::before {
     content: "";
     position: absolute;
@@ -276,3 +289,48 @@ button:after {
     border-radius: 2px;
     margin-top: 84px;
 }
+.log {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 6px solid #4526b1;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.team-logo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: rgba(253, 86, 42, 0.722);
+    transition: all 0.3s ease-in-out;   
+}
+.team-logo:hover {
+    background-color: #fd562a;
+    z-index: 50px;
+}
+.navItem::before, .navItem::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #fd562a;
+    transition: width 0.3s ease;
+}
+.navItem:hover {
+    color: #fd562a;
+    transition: all 0.3s;
+} 
+.team-logo {
+    backdrop-filter: blur(8px) brightness(80%);
+    transition: all .3s ease-in-out;
+  }
+
+  .team-logo:hover {
+    background: #fd562a;
+  }
+  

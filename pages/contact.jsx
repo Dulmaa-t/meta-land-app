@@ -3,19 +3,26 @@ import Link from "next/link";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import SubBanner from "../components/SubBanner/SubBanner";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className="container mx-auto py-20">
            <SubBanner />
             <div className="text-center mt-20">
-                <p className="">Send Message</p>
-                <h1 className="text-[42px]">Write Us Message for Any Reason</h1>
+                <p className="" data-aos="fade-up">Send Message</p>
+                <h1 className="text-[42px]" data-aos="fade-up">Write Us Message for Any Reason</h1>
             </div>
             <div className="flex justify-between py-20">
                 <div className="flex flex-col gap-4">
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-row gap-4" data-aos="fade-up">
                         <div className="bg-whitePurple rounded-full w-14 h-14 flex items-center justify-center" >
                             <FaMapMarkerAlt />
                         </div>
@@ -24,7 +31,7 @@ const Contact = () => {
                             <p>20, Backway Road, New York, US AB42</p>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-row gap-4" data-aos="fade-up">
                         <div className="bg-whitePurple rounded-full w-14 h-14 flex items-center justify-center" >
                             <FaPhoneAlt />
                         </div>
@@ -33,7 +40,7 @@ const Contact = () => {
                             <p>+123 456 7890</p>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-row gap-4" data-aos="fade-up">
                         <div className="bg-whitePurple rounded-full w-14 h-14 flex items-center justify-center" >
                             <MdEmail />
                         </div>

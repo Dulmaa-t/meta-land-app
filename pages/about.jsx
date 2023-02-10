@@ -26,7 +26,7 @@ const About = () => {
                     <h1 className='aos-animate text-center text-[42px] px-80 font-[500]'>We Are Partnered with Top Brands</h1>
                 </div>
                 <div className="flex flex-wrap w-full my-8">
-                    <div className="border border-b border-[#ffffff2e] px-[90px] py-12 w-[292px]">
+                    <div className="logo border border-b border-[#ffffff2e] px-[90px] py-12 w-[292px]">
                         <Image src={logo1} alt="logo1" className="logo opacity-50" />
                     </div>
                     <div className="border border-b border-[#ffffff2e] px-[90px] py-12 w-[292px]">

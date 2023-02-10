@@ -72,8 +72,8 @@ export default function Home() {
         <FAQ />
       </div>
       <div className='flex flex-col my-20 h-[1100px]'>
-        <p className='text-center text-[20px] sub-title'>Road Map</p>
-        <h1 className='aos-animate text-center text-[42px]'>The Journey of Monteno NFT</h1>
+        <p className='text-center text-[20px] sub-title' data-aos="fade-up">Road Map</p>
+        <h1 className='aos-animate text-center text-[42px]' data-aos="fade-up">The Journey of Monteno NFT</h1>
         <RoadMap />
       </div>
       <div className='rounded-lg bg-whitePurple p-20 flex justify-between py-10'>
