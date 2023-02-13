@@ -14,12 +14,12 @@ const Footer = () => {
                 <div className="flex flex-row gap-4 text-[20px]">
                     <Link href={`/`}>
                         <div className="rounded-full p-4 bg-whitePurple transition transform hover:transition-all hover:bg-blue-500">
-                            <FaFacebookF className="icon"/>
+                            <FaFacebookF className="icon" />
                         </div>
                     </Link>
                     <Link href={`/`}>
                         <div className="rounded-full p-4 bg-whitePurple hover:bg-blue-400">
-                            <FaTwitter className="icon"/>
+                            <FaTwitter className="icon" />
                         </div>
                     </Link>
                     <Link href={`/`}>

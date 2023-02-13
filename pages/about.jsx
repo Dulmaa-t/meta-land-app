@@ -14,7 +14,7 @@ import logo8 from "../public/logo-08.png";
 
 const About = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto py-20">
             <SubBanner />
             <Team />
             <div className='flex flex-col'>

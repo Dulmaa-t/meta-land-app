@@ -19,7 +19,7 @@ const Team = () => {
     return (
         <div className="flex flex-wrap py-20 gap-8 justify-center items-center" data-aos="fade-right" > 
             <div data-aos="fade-up" >
-                <div className="team-logo rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team1} alt="team1" height={270} className="rounded-full w-[220px] h-[220px] " />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">
@@ -29,7 +29,7 @@ const Team = () => {
             </div>
             <div className=""></div>
             <div data-aos="fade-up" >
-                <div className="rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team2} alt="team2" className="rounded-full w-[220px] h-[220px]" />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">
@@ -38,7 +38,7 @@ const Team = () => {
                 </div>
             </div>
             <div data-aos="fade-up" >
-                <div className="rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team3} alt="team3" className="rounded-full w-[220px] h-[220px]" />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">
@@ -47,7 +47,7 @@ const Team = () => {
                 </div>
             </div>
             <div data-aos="fade-up" >
-                <div className="rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team4} alt="team4" className="rounded-full w-[220px] h-[220px]" />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">
@@ -56,7 +56,7 @@ const Team = () => {
                 </div>
             </div>
             <div data-aos="fade-up" >
-                <div className="rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team5} alt="team5" className="rounded-full w-[220px] h-[220px]" />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">
@@ -65,7 +65,7 @@ const Team = () => {
                 </div>
             </div>
             <div data-aos="fade-up">
-                <div className="rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team6} alt="team6" className="rounded-full w-[220px] h-[220px]" />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">
@@ -74,7 +74,7 @@ const Team = () => {
                 </div>
             </div>
             <div data-aos="fade-up">
-                <div className="rounded-full border-purple border-4">
+                <div className="img-team rounded-full border-purple border-4">
                     <Image src={team1} alt="team1" className="rounded-full w-[220px] h-[220px]" />
                 </div>
                 <div class="team-info flex flex-col items-center justify-center mt-4">

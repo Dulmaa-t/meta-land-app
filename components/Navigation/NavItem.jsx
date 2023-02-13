@@ -7,9 +7,6 @@ const NavItem = (props) => {
             {props.btn ? (
                 <p>{props.title}</p>
             ) : (
-                // <Link passHref href={props.login ? "/" : props.link}>
-                //     {props.title}
-                // </Link>
                 <p onClick={props.redirect}>{props.title}</p>
             )}
         </li>

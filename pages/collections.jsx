@@ -5,7 +5,7 @@ import item26 from "../public/item-26.png";
 
 const Collections = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto py-20">
             <SubBanner />
             <div className="flex flex-row my-20">
                 <div className="flex">

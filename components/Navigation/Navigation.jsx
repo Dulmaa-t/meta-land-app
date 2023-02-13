@@ -3,11 +3,12 @@ import NavItem from "./NavItem";
 import Link from "next/link";
 import Image from "next/image";
 import Router, { useRouter } from "next/router";
+import { getLocal } from "../../utils/storage";
 import SwitchLanguageBtn from "../../locale/SwitchLanguageBtn";
 import useCommonTranslation from "../../locale/useCommonTranslation";
 
 const Navigation = (props) => {
-   const {
+ {/*const {
         menuTexts: {
             menu_right,
             menu_collections,
@@ -16,7 +17,7 @@ const Navigation = (props) => {
             menu_contact,
             menu_signin
         },
-    } = useCommonTranslation(); 
+    } = useCommonTranslation(); */}  
     const router = useRouter();
     const redirect = (path) => {
         router.push(path);
@@ -32,7 +33,6 @@ const Navigation = (props) => {
                 <NavItem className="navItem" title="Sign in" redirect={() => redirect("/login")} />
                 <SwitchLanguageBtn />
             </ul>
-
         </div>
     )
 }
